@@ -1,0 +1,111 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  background-image: url(../img/box.png);
+  background-size: 100% 113%;
+  background-repeat: no-repeat;
+}
+
+.div {
+  padding: 0 100px;
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.h1 {
+  margin: 0 auto;
+  padding-top: 20px;
+  font-weight: 400;
+  font-size: 50px;
+  text-align: center;
+  color: rgb(154, 0, 39);
+  transition: color 0.3s ease-in-out;
+  cursor: pointer;
+  margin-bottom: 50px;
+}
+
+.h1:hover {
+  color: rgb(255, 28, 28);
+}
+
+.ul {
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  list-style: none;
+  gap: 30px;
+}
+
+.card {
+  width: 130px;
+  height: 175px;
+  padding: 30px;
+  /* background-color: rgb(233, 29, 29); */
+  background-image: url(../img/card.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  font-size: 0;
+  color: transparent;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: outline 0.1s ease-in-out;
+}
+
+.card:hover {
+  outline: 3px solid #000;
+}
+
+.open {
+  font-size: 100px;
+  /* background-color: aqua; */
+  background-image: url(../img/cup.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  text-align: center;
+  color: rgb(255, 17, 0);
+  cursor: default;
+  transition: background-image 0.2s ease-in-out, color 0.2s ease-in-out;
+}
+
+.success {
+  font-size: 100px;
+  /* background-color: rgb(13, 255, 0); */
+  background-image: url(../img/cup.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  text-align: center;
+  color: rgb(51, 255, 0);
+  cursor: default;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  padding-top: 30px;
+}
+
+.button {
+  padding: 10px;
+  font-size: 20px;
+  background-color: bisque;
+  border: 2px solid #000;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.button:hover {
+  background-color: rgb(211, 173, 127);
+}
